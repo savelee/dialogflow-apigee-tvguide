@@ -58,6 +58,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var showsRouter = require('./routes/shows');
+var newShowsRouter = require('./routes/newshows');
 var myShowsRouter = require('./routes/myshows');
 
 
@@ -77,6 +78,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/shows', showsRouter);
+app.use('/newshows', newShowsRouter);
 app.use('/myshows', myShowsRouter);
 
 // Declare the redirect route
