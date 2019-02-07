@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+    ul
+    each val in shows
+        li
+            
+            p #{val.first_aired} #{val.show.airs.day} #{val.show.network} #{val.show.title} #{val.episode.season} - #{val.episode.number} #{val.show.country}
+            p=val.show.overview
+

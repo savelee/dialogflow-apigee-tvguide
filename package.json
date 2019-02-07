@@ -1,0 +1,26 @@
+{
+  "name": "tvguideapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cookie-parser": "~1.4.3",
+    "dateformat": "^3.0.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "trakt.tv": "^7.1.0",
+    "trakt.tv-cached": "^3.0.1",
+    "trakt.tv-images": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "route-async": "^1.0.1"
+  }
+}
